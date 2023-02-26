@@ -1,3 +1,5 @@
+import random
+
 # 1st part of the task
 
 print("Hello world")
@@ -34,4 +36,16 @@ while True:
     except ValueError:
         print("Error!Wrong input!")
         continue
+
+
+# 3rd part of the task
+
+random_list = random.sample(range(1, 100), 20)
+print("List with random numbers: ", random_list)
+even_list = []
+for i in range(len(random_list)):
+    if random_list[i] % 2 == 0:
+        even_list.append(random_list[i])
+print("List with even numbers: ", even_list)
+
 
