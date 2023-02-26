@@ -1,0 +1,1 @@
+# Enter command 'pip freeze > requirements.txt' to record an environment's current package list
