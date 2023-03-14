@@ -6,14 +6,18 @@ print("Hello world")
 
 
 # 2nd part of the task
+
+addOp, subOp, multOp, divOp = "add", "sub", "mult", "div"
+
+
 def calculation(num1, num2, op):
-    if op == "add":
+    if op == addOp:
         return num1 + num2
-    elif op == "sub":
+    elif op == subOp:
         return num1 - num2
-    elif op == "mult":
+    elif op == multOp:
         return num1 * num2
-    elif op == "div":
+    elif op == divOp:
         return num1 / num2
 
 
@@ -24,7 +28,7 @@ while True:
         try:
             b = float(str(input("Enter 2nd number: ")))
             operator = input("Enter math command(add, sub, mult, div): ")
-            if str(operator) == "add" or str(operator) == "sub" or str(operator) == "mult" or str(operator) == "div":
+            if str(operator) == addOp or str(operator) == subOp or str(operator) == multOp or str(operator) == divOp:
                 print("The result: " + str(calculation(a, b, operator)), "\n")
                 break
             else:
@@ -47,5 +51,3 @@ for i in range(len(random_list)):
     if random_list[i] % 2 == 0:
         even_list.append(random_list[i])
 print("List with even numbers: ", even_list)
-
-
